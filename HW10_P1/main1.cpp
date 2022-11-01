@@ -10,6 +10,13 @@
 
 using namespace std;
 
+int findNumOfUniqueCharInStr(string myString);
+int main(){
+  
+  findNumOfUniqueCharInStr(myString);
+  
+}
+
   // find the unique values in a string
 
 int findNumOfUniqueCharInStr(string myString) {
@@ -29,7 +36,6 @@ int findNumOfUniqueCharInStr(string myString) {
   int j = 1;
   bool FLAG;
   // fill unique
-
   for (n = 1; n < L; n++) {
     
     FLAG = false; // meaning it does not exist
@@ -39,7 +45,6 @@ int findNumOfUniqueCharInStr(string myString) {
         FLAG = true;
     }
     // if it didn't exist we will add it in to unique
-
     if (FLAG == false) {
       unique[j] = myString[n];
       j++;
@@ -48,4 +53,3 @@ int findNumOfUniqueCharInStr(string myString) {
   return j;
 }
   
-}
