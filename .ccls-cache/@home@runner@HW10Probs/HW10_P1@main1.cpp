@@ -1,6 +1,6 @@
 // Programmer: John Thompson
 // Description: HW10 Hangman Kattis Problem
-// Date: 10/ 28/ 2022
+// Date: 10/ 31/ 2022
 
 
 #include <iostream>

@@ -1,6 +1,6 @@
 // Programmer: John Thompson
 // Description: HW10 Problem 4
-// Date: 10/ 28/ 2022
+// Date: 10/ 31/ 2022
 
 
 #include <iostream>
