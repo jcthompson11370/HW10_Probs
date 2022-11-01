@@ -9,27 +9,29 @@ using namespace std;
 void sortArray(int list[], int length);
 
 int main() {
-  
+  int A;
   int N;
   cout << "Enter size of N: ";
   cin >> N;
 
   const int ARRAY_SIZE = N;
-  int myArray[ARRAY_SIZE] = {0};
+  int myArray[ARRAY_SIZE];
 
   for(int index = 0; index < ARRAY_SIZE; index++){
     cin >> myArray[index];
+    }
 
-    cout << "Enter" << N << " numbers to be sorted";
-    int A;
-    cin >> A;
-    
-    if (A > max) {
-      int max = -1;
-      max = A;
-      count++;
+  for(int index = 0; index < N; index++){
+    if(index = 0){
+      A = myArray[0];
+      cout << A << endl;
+    }
+    else (A < myArray[index]){
+      cout << myArray[index];
+      A = myArray[index];
     }
   }
     
- return 0;
-}
+  return 0;
+  }
+    
