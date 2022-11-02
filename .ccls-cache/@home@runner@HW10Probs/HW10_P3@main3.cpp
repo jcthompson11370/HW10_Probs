@@ -3,6 +3,7 @@
 // Date: 10/ 31/ 2022
 
 #include <iostream>
+#include <array>
 
 using namespace std;
 
@@ -24,12 +25,10 @@ int main() {
   
     cin >> myArray[index];
     }
-
-  for (index = 0; index < myArray[newMax]; index++) {
-    newArraySize = myArray[newMax];
-    
-    cout << newArraySize << endl;
-  }
+  
+  
+  int count = 0;
+  cout << "The new array size is: " <<  count + 1 << endl;
   for(index = 0; index < N; index++){
     if(index == 0){
       newMax = myArray[0];
@@ -38,10 +37,10 @@ int main() {
     else if(newMax < myArray[index] && index > 0){
     newMax = myArray[index]; 
     cout << newMax << " ";
+      count++;
       } 
-    cin >> myArray[newMax];
-    myArray[newMax] = myNewArray[];
     }
+  
    return 0;
   }
 
