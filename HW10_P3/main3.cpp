@@ -7,11 +7,12 @@
 
 using namespace std;
 
-void sortArray(int myArray[], int ARRAY_SIZE);
-void printArray(const int myArray[], int ARRAY_SIZE);
+void sortArray(int myArray[], int ARRAY_SIZE, int newMax, int newArraySize);
+
+int count = 0;
 
 int main() {
-  int newMax, newArraySize, index;
+  int newMax, newArraySize;
   int N;
   cout << "Enter size of N: ";
   cin >> N;
@@ -21,28 +22,31 @@ int main() {
   int myNewArray[] = {0};
 
   cout << "Enter " << N << " integers: ";
-  for(index = 0; index < ARRAY_SIZE; index++){
+  for(int index = 0; index < ARRAY_SIZE; index++){
   
     cin >> myArray[index];
     }
+
+  sortArray(myArray, ARRAY_SIZE, newMax, newArraySize);
   
+   return 0;
+  }
+
+void sortArray(int myArray[], int ARRAY_SIZE, int newMax, int newArraySize){
   
-  int count = 0;
-  cout << "The new array size is: " <<  count + 1 << endl;
-  for(index = 0; index < N; index++){
+  for(int index = 0; index < ARRAY_SIZE; index++){  
     if(index == 0){
       newMax = myArray[0];
       cout << newMax << " ";
     }
     else if(newMax < myArray[index] && index > 0){
-    newMax = myArray[index]; 
-    cout << newMax << " ";
+      newMax = myArray[index]; 
+      cout << newMax << " ";
       count++;
       } 
     }
-  
-   return 0;
-  }
+  cout << "\nThe new array size is: " << count + 1 << endl; 
+}
 
 
 
