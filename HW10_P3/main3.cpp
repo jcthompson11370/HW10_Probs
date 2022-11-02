@@ -1,13 +1,14 @@
 // Programmer: John Thompson
 // Description: HW10 Greedily Increasing Sub.
 // Date: 10/ 31/ 2022
+// Note: Jake Thompson, Eric Pollert, Edwin Kurjak, and I worked on this problem together
 
 #include <iostream>
 #include <array>
 
 using namespace std;
 
-void sortArray(int myArray[], int ARRAY_SIZE, int newMax, int newArraySize);
+void sortArray(int myArray[], int ARRAY_SIZE, int newMax);
 
 int count = 0;
 
@@ -27,12 +28,12 @@ int main() {
     cin >> myArray[index];
     }
 
-  sortArray(myArray, ARRAY_SIZE, newMax, newArraySize);
+  sortArray(myArray, ARRAY_SIZE, newMax);
   
    return 0;
   }
 
-void sortArray(int myArray[], int ARRAY_SIZE, int newMax, int newArraySize){
+void sortArray(int myArray[], int ARRAY_SIZE, int newMax){
   
   for(int index = 0; index < ARRAY_SIZE; index++){  
     if(index == 0){

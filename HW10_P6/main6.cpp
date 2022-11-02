@@ -1,7 +1,7 @@
 // Programmer: John Thompson
 // Description: HW10 Problem 6
 // Date: 11/ 01/ 2022
-// Note: Jake Thompson and I worked together on this problem
+// Note: Jake Thompson, Eric Pollert, Edwin Kurjak, and I worked on this problem together
 
 #include <iostream>
 
