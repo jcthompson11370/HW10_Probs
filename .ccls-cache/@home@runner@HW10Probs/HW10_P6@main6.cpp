@@ -25,6 +25,13 @@ int main(){
     cin >> list[i].gallon;
     
   }
- 
+  double totMPG = 0;
+  for(int i = 0; i < listSize; i++){
+
+    double mpg = list[i].miles / list[i].gallon;
+    totMPG += mpg;
+    cout << "Vehicle number " << list[i].num << " used: " << mpg << " mpg" << endl;
+  }
+
   return 0;
 }
