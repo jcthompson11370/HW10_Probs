@@ -1,6 +1,7 @@
 // Programmer: John Thompson
 // Description: HW10 Hangman Kattis Problem
 // Date: 10/ 31/ 2022
+// Note: Jake Thompson, Eric Pollert, Edwin Kurjak, and I worked on this problem together
 
 
 #include <iostream>
