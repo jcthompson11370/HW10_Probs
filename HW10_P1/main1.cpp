@@ -23,7 +23,24 @@ int main(){
 
   int L = findNumOfUniqueCharInStr(word);
 
-  
+  int bodyPart = 0;
+
+  for (int i = 0; i < 26; i++){
+    if(word.find(guess[i]) != string::npos) {
+      L--;
+    }
+    else{
+      bodyPart++;
+    }
+    if(bodyPart == 10){
+      cout << "LOSE";
+      break;
+    }
+    if(L == 0){
+      cout << "WIN";
+      break;
+    }
+  }
   return 0;  
 }
 
